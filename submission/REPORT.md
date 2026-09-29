@@ -8,7 +8,7 @@
 - **MSSV:** 2A202602775
 - **Lớp:** K4-L3A
 - **Repository URL:** https://github.com/bobui147/K4-L3A-Day13-BuiTungDuong-2A202602775-Monitoring-LLMOps
-- **Commit SHA cuối:** cập nhật sau khi tạo commit nộp bài
+- **Commit SHA cuối:** `12a7b9b97c8b528bb9ff42761f98f4783a7198b5` (commit source/evidence đã chạy kiểm tra cuối; commit kế tiếp chỉ cập nhật dòng SHA này)
 - **Challenge ID:** `day13-k4-l3a-monitoring-llmops-v1`
 - **Tên project Langfuse cá nhân:** `day13-k4-l3a-02775`
 
