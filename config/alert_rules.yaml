@@ -1,25 +1,25 @@
 alerts:
-  - name: TODO_alert_1
-    severity: TODO
-    condition: TODO
-    duration: TODO
+  - name: high_request_latency
+    severity: warning
+    condition: 'p95(latency_ms) > 3000 over 10m'
+    duration: 10m
     type: symptom-based
-    channel: slack
-    owner: TODO
-    runbook: docs/alerts.md#alert-1
-  - name: TODO_alert_2
-    severity: TODO
-    condition: TODO
-    duration: TODO
+    channel: 'slack:#llmops-alerts'
+    owner: platform-oncall
+    runbook: docs/alerts.md#high-request-latency
+  - name: elevated_request_error_rate
+    severity: critical
+    condition: 'error_rate_pct > 2 over 5m'
+    duration: 5m
     type: symptom-based
-    channel: slack
-    owner: TODO
-    runbook: docs/alerts.md#alert-2
-  - name: TODO_alert_3
-    severity: TODO
-    condition: TODO
-    duration: TODO
+    channel: 'slack:#llmops-alerts'
+    owner: platform-oncall
+    runbook: docs/alerts.md#elevated-request-error-rate
+  - name: degraded_answer_quality
+    severity: warning
+    condition: 'avg(quality_score) < 0.75 over 15m'
+    duration: 15m
     type: symptom-based
-    channel: slack
-    owner: TODO
-    runbook: docs/alerts.md#alert-3
+    channel: 'slack:#llmops-alerts'
+    owner: llm-application-oncall
+    runbook: docs/alerts.md#degraded-answer-quality

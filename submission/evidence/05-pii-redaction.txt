@@ -1,0 +1,16 @@
+PII redaction runtime evidence
+
+Synthetic input sent to /chat:
+Email pii.test@example.com phone 0901234567 CCCD 001203004567
+
+Application log output (correlation req-97f40099):
+{"message_preview":"Email [REDACTED_EMAIL] phone [REDACTED_PHONE_VN] CCCD [REDACTED_CCCD]"}
+
+Synthetic card input sent to /chat:
+Card 4111 1111 1111 1111 must be redacted
+
+Application log output (correlation req-55ddcd50):
+{"message_preview":"Card [REDACTED_CREDIT_CARD] must be redacted"}
+
+validate_logs.py independently scanned the complete JSONL and reported zero
+potential PII leaks.

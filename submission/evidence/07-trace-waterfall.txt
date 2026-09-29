@@ -1,0 +1,11 @@
+Langfuse Observations API v2 waterfall verification
+Project: day13-k4-l3a-02775
+
+Trace: e1e11274ae7c384fd3e4157bc0044288
+Root observation: lab-agent-run (AGENT), latency 0.153 s
+Child observation: retrieval (RETRIEVER), latency 0.001 s
+Child observation: fake-llm-generation (GENERATION), latency 0.152 s
+
+Both child observations reference the root observation through
+parent_observation_id. The waterfall shows the fake LLM generation is the
+dominant step for this request.

@@ -1,0 +1,5 @@
+Final test run
+Command: python -m pytest -q
+
+..........................                                               [100%]
+26 passed in 3.18s

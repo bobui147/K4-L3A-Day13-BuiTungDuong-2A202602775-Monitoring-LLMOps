@@ -1,0 +1,15 @@
+Langfuse prompt promotion and rollback verification
+Project: day13-k4-l3a-02775
+
+Production promoted to version 2:
+trace 7ed07d1fa7268da49c7962f424c916ea
+correlation req-cp2prod
+metadata prompt_label=production, prompt_version=2, prompt_source=langfuse
+
+Production rolled back to version 1:
+trace 2a6abe63baf2f62123baaa818ef5c4f7
+correlation req-cp2roll
+metadata prompt_label=production, prompt_version=1, prompt_source=langfuse
+
+Final label state fetched from Langfuse:
+baseline=1, candidate=2, production=1

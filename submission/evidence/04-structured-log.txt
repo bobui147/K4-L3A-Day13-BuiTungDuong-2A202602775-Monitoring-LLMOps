@@ -1,0 +1,6 @@
+Structured log runtime evidence
+
+{"service":"api","latency_ms":4651,"ttft_ms":50,"tokens_in":35,"tokens_out":138,"cost_usd":0.002175,"quality_score":0.8,"tool_name":"retrieval","tool_success":true,"event":"response_sent","model":"claude-sonnet-4-5","user_id_hash":"dc9b2ec8da9d","feature":"monitoring","correlation_id":"req-b89e3f5b","env":"dev","session_id":"k4-l3a-challenge-s03","level":"info","ts":"2026-09-29T09:17:13.238286Z"}
+
+Required fields visible: timestamp, level, service, event, correlation_id,
+model, environment, feature, latency and retrieval result.

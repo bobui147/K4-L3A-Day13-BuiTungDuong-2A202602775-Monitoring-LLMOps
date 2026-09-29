@@ -1,0 +1,29 @@
+Langfuse Observations API v2 incident trace evidence
+Project: day13-k4-l3a-02775
+
+Correlation ID: req-b89e3f5b
+Trace ID: 38298e47eb0a9643d2ddecc2b038a3c0
+
+Observation tree:
+- lab-agent-run (AGENT)
+  id: 7c8b42b214ff9470
+  duration: 4.653 s
+  status: DEFAULT
+  - retrieval (RETRIEVER)
+    id: c05b984e5d753cab
+    parent: 7c8b42b214ff9470
+    duration: 2.502 s
+    status: DEFAULT
+  - fake-llm-generation (GENERATION)
+    id: cfc91fb91c3d7f52
+    parent: 7c8b42b214ff9470
+    duration: 0.152 s
+    status: DEFAULT
+    model: claude-sonnet-4-5
+    prompt: day13-chat version 1
+    usage: input=35, output=138, total=173
+    cost_usd: 0.002175
+
+Comparison: CP2 baseline retrieval observations took approximately 0–1 ms.
+The challenge retrieval observation took 2.502 s, whereas generation stayed at
+0.152 s. This localizes the injected latency to retrieval.

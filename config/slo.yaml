@@ -7,7 +7,17 @@ primary_slo:
     total_event: 'event == "request_received"'
   target_percent: 99.5
   error_budget_percent: 0.5
-  note: Học viên phải giải thích hoặc điều chỉnh ngưỡng bằng baseline của mình.
+  rationale: >-
+    P95 baseline của fake LLM thấp hơn nhiều so với 3000 ms, nên ngưỡng này
+    phát hiện suy giảm rõ rệt nhưng không cảnh báo do dao động nhỏ của máy lab.
+  error_budget:
+    formula: floor(total_requests_in_window * (1 - target_percent / 100))
+    example_total_requests: 10000
+    allowed_bad_requests: 50
+    time_equivalent_if_continuous: 3h21m36s per 28d
+    consumption_rule: >-
+      Mỗi request không có response_sent hoặc có latency_ms > 3000 tiêu thụ
+      một đơn vị error budget.
 guardrails:
   error_rate_pct_max: 2
   daily_cost_usd_max: 2.5

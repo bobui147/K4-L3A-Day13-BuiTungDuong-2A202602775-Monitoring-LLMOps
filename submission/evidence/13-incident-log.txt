@@ -1,0 +1,14 @@
+Challenge log evidence
+
+Selected correlation ID: req-b89e3f5b
+Session: k4-l3a-challenge-s03
+Feature: monitoring
+
+request_received:
+2026-09-29T09:17:06.986586Z request_received req-b89e3f5b
+
+response_sent:
+{"service":"api","latency_ms":4651,"ttft_ms":50,"tokens_in":35,"tokens_out":138,"cost_usd":0.002175,"quality_score":0.8,"tool_name":"retrieval","tool_success":true,"event":"response_sent","model":"claude-sonnet-4-5","feature":"monitoring","correlation_id":"req-b89e3f5b","env":"dev","session_id":"k4-l3a-challenge-s03","level":"info","ts":"2026-09-29T09:17:13.238286Z"}
+
+The request completed successfully but exceeded the 2000 ms challenge latency
+threshold. TTFT and tool success did not indicate an LLM or error-rate problem.

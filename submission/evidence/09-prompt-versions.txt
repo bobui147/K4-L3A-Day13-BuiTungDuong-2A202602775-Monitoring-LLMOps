@@ -1,0 +1,12 @@
+Langfuse prompt verification
+Project: day13-k4-l3a-02775
+
+Prompt name: day13-chat
+baseline label -> version 1
+candidate label -> version 2
+
+Same-input trace using baseline/v1:
+237f3ce5149366190345b27cac45d233 (correlation req-cp2base)
+
+Same-input trace using candidate/v2:
+03df381ef37baf3c00d76570975a860c (correlation req-cp2cand)

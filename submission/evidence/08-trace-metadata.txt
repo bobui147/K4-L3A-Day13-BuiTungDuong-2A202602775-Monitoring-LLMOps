@@ -1,0 +1,19 @@
+Langfuse Observations API v2 metadata verification
+Project: day13-k4-l3a-02775
+
+Trace: e1e11274ae7c384fd3e4157bc0044288
+user_id: 19dbfa74132f (SHA-256 prefix; raw user ID was not captured)
+session_id: cp2-langfuse-evidence
+feature: qa
+model: claude-sonnet-4-5
+environment: dev
+correlation_id: req-cp20005
+prompt_name: day13-chat
+prompt_label: production
+prompt_version: 1
+prompt_source: langfuse
+usage: input=33, output=150, total=183
+cost_usd: 0.002349
+
+Root capture_input/capture_output are disabled. Child input/output contain only
+PII-scrubbed previews and counts, not raw request data.

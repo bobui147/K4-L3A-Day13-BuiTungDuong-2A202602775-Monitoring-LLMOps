@@ -1,0 +1,18 @@
+Langfuse Observations API v2 verification
+Project: day13-k4-l3a-02775
+Session: cp2-langfuse-evidence
+Verified at: 2026-09-29 UTC
+
+Result: 10 traces, 30 observations
+Structure per trace: 1 AGENT root + 1 RETRIEVER child + 1 GENERATION child
+
+03df381ef37baf3c00d76570975a860c
+20658c02f815dbe63508a0d6f0f5eb22
+237f3ce5149366190345b27cac45d233
+2a6abe63baf2f62123baaa818ef5c4f7
+5a726ddd7238d2a98f545f006b25d5d3
+60722d64f57742e0c13bf3808ab307af
+7ed07d1fa7268da49c7962f424c916ea
+8dec366f7056cd5be5f9381ea12885b5
+e1e11274ae7c384fd3e4157bc0044288
+e8b1fb603b4407d4d425431f0e49d69e

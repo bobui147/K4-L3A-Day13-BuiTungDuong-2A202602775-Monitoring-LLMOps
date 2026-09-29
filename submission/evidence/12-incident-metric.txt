@@ -1,0 +1,22 @@
+Challenge metric evidence
+
+Challenge ID: day13-k4-l3a-monitoring-llmops-v1
+Investigation window: 2026-09-29T09:16:47Z to 2026-09-29T09:17:24Z
+
+Before workload:
+- traffic: 0
+- latency P95: 0 ms
+- active incidents: none
+
+After five challenge requests:
+- traffic: 5
+- latency P50: 2655 ms
+- latency P95 (metrics endpoint, nearest-rank): 4651 ms
+- latency P99: 4651 ms
+- TTFT P95: 50 ms
+- error breakdown: none
+
+Runtime dashboard evidence/12-incident-metric.png uses interpolated percentiles
+over the same five response_sent records and shows latency P95=4252 ms,
+P99=4571 ms. Both P95 calculations exceed the challenge threshold of 2000 ms,
+while TTFT remains normal.
